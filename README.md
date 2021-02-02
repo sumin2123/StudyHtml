@@ -12,19 +12,19 @@ HTML 기본 학습
 
 ---------------------------------
 
-# CSS3
+## CSS3
 CSS 기본 학습 [CSS소스](https://github.com/sumin2123/StudyHtml/tree/main/02_CSS)
 
 ----------------------------------
 
-# Javascript
+## Javascript
 Javascript 기본 학습
 
 ----------------------------------
 
-# Responsive Web
+## Responsive Web
 응답형 웹 기본 학습
 
 ----------------------------------
-# Project
+## Project
 전체 통합 프로젝트

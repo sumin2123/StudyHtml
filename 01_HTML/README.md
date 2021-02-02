@@ -38,4 +38,4 @@
 
 ## HTML5 입력 태그
 
-[이전](https://github.com/sumin2123/StudyHtmll)
+[이전](https://github.com/sumin2123?tab=repositories)

@@ -162,7 +162,7 @@
                 background-color: #F2f0f0;
                 overflow: hidden;
             }
-            .paper-Link {
+            .paper-link {
                 display: block;
                 float: left;
 
@@ -263,24 +263,24 @@
             //로드 이벤트
             $(document).ready(function  () {
                     //풀다운 메뉴 적용
-                $("outer-menu").hover(function () {
+                $(".outer-menu").hover(function () {
                     $(this).find('.inner-menu').css('display','block');
                 },  function () {
                     $(this).find(".inner-menu").css('display', 'none');
                 });
                 // 그리드 레이아웃, 이미지 자동로드 적용
-                $("#main-section").imagesLoaded0 (function() {
+                $("#main-section").imagesLoaded (function() {
                     $("#main-section").masonry({
-                    ltemSelector : ".paper",
-                    columwidth : 230 
+                    itemSelector : ".paper",
+                    columnWidth : 230 
                 });
             });
 
             //라이트 박스
             $(".paper").click(function() { showLightBox(); });
-            $("darken-background").click(function() {hideLightBox(); });
+            $("#darken-background").click(function() {hideLightBox(); });
             // 라이트박스 이벤트 서포트 // 하얀영역을 클릭해도 라이트박스가 꺼지는 걸 방지 
-            $('#Lightbox').click(function (event){
+            $('#lightbox').click(function (event){
                 event.stopPropagation()
             });
         });

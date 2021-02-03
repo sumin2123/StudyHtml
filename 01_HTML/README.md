@@ -31,11 +31,11 @@
         <a href="https://www.naver.com" target="_blank">NAVER</a><br>
         <a href="https://www.youtube.com" target="_self">Youtube</a><br>
         <a href="https://www.microsoft.com">Microsoft</a><br>
-        <a href="mailto:personar95@naver.com">성명건 이메일</a>
+        <a href="mailto:mini247269@naver.com">박수민 이메일</a>
     </body>
 </html>
 ```
 
 ## HTML5 입력 태그
 
-[이전](https://github.com/hugoMGSung/StudyHtml)
+[이전](https://github.com/sumin2123?tab=repositories)

@@ -255,7 +255,7 @@
         <script src="js/masonry.pkgd.min.js"></script>
         <script src="js/imagesloaded.pkgd.min.js"></script>
         <script>
-            //로고 이벤트
+            //로드 이벤트
             $(document).ready(function  () {
                     //풀다운 메뉴 적용
                 $("outer-menu").hover(function () {
@@ -267,19 +267,43 @@
                 $("#main-section").imagesLoaded0 (function() {
                     $("#main-section").masonry({
                     ltemSelector : ".paper",
-                    columwidth : 230,
-                    isAnimated : true
+                    columwidth : 230 
                 });
             });
             //라이트 박스
             $(".paper").click(function() { showLightBox(); });
+            $("darken-background").click(function() {hideLightBox(); });
+            
+            });
         });
 
             function showLightBox() {
+                //라이트박스를 보이지 않게 합니다.
                 $("#darken-background").show();
+                //스크롤을 못하게 합니다.
                 $("#darken-background").css("top", $(window).scrollTop());
                 $("body").css('overflow','hidden');
             }
+
+            function hideLightBox() {
+                //라이트박스를 보이지 않게 합니다.
+                $("#darken-background").hide();
+                // 스크롤을 하게 합니다.
+                $("body").css('overflow','auto'); //정확
+            }
+            //라이트박스 제거 이벤트
+            $('darken-background').click(function (){
+                hideLightBox();
+            });
+
+            //클릭 이벤트 연결
+            $('.paper').click(function (){ showLightBox(); });
+
+            //라이트박스 제거 이벤트 보조
+            $('#Lightbox').click(function (event){
+                event.stopPropagation()
+            });
+        });
 
         </script>
     </head>
